@@ -48,7 +48,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           key={message.content}
           role={message.role}
           content={message.content}
-          src={message.src}
+          src={companion.src}
         />
       ))}
       {isLoading && <ChatMessage role="system" src={companion.src} isLoading />}
